@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Cadastro do pet pet</title>
+</head>
+<body>
+        <h1><strong>Cadastro pet</strong></h1>
+
+        <div> <label >Nome do pet:</label>
+            <input type="text" id="nome" required><br>
+        
+            <label>Idade do pet:</label>
+            <input type="number" id="idade" required ><br>
+        
+            <label >Raça do pet:</label> 
+            <input type="text" id="raca" required ><br>
+    
+            <label >Cor do pelo do pet:</label>
+            <input type="text" id="pelo" required>
+            
+            </div>
+       
+        <button type="submit" id="btnEnviar"> Enviar</button>
+    
+        <h1>Listar os pets</h1>
+
+        <div id="listar-pets">
+            <p>carregando a lista dos pets</p>
+        </div>
+
+        <div id="formularioEdicao" style="display: none;">
+            <h2>Editar o formulário dos pets</h2>
+            <label for="editar-nome">Nome:</label>
+            <input type="text" id="editar-nome"><br><br>
+        
+            <label for="editar-idade">Idade:</label>
+            <input type="number" id="editar-idade"><br><br>
+        
+            <label for="editar-raca">Raça:</label>
+            <input type="text" id="editar-raca"><br><br>
+        
+            <label for="editar-pelo">Pelo:</label>
+            <input type="text" id="editar-pelo"><br><br>
+
+            <input type="hidden" id="editar-id">
+        
+            <button id="btn-Editar">Editar</button>
+            <button id="btn-Cancelar">Cancelar</button>
+        
+        </div>
+        <footer></footer>
+        </div>
+        
+        <script type="module" src="/Js/cadastrar-pet.js"></script>
+        <script type="module" src="/Js/firebaseConfig.js"></script>
+        <script type="module" src="/Js/lerInformaçoesPet.js"></script>
+        <script type="module" src="/Js/auth.js""></script>
+</body>
+</html>

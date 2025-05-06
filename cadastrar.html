@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Cadastrar</title>
+  </head>
+  <body>
+    <div class="cadastro-caixa">
+      <h2>Cadastrar usuário</h2>
+    </div>
+
+    <div class="div-cadastro">
+      <label for="emailCadastro">Email</label>
+      <input type="email" id="emailCadastro" placeholder="Email" />
+
+      <label for="senhaCadastro">Senha</label>
+      <input type="password" id="senhaCadastro" placeholder="Senha" />
+
+      <p>
+        Já possui conta?
+        <a href="./login.html"> <strong>Logar</strong></a>
+      </p>
+      <p>
+        Esqueceu a senha?
+        <a href="./pages/recuperar.html"> <strong>Recuperar</strong></a>
+      </p>
+
+      <button id="btnCadastro">Cadastrar</button>
+    </div>
+
+    <div id="mensagemCadastro" class="mensagens"></div>
+
+    <footer class="footer-cadastro"></footer>
+
+    <script type="module" src="/Js/auth.js"></script>
+  </body>
+</html>
